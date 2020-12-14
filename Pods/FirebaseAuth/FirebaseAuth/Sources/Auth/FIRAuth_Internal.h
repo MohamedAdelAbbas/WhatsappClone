@@ -14,8 +14,9 @@
  * limitations under the License.
  */
 
-#import <FirebaseAuth/FIRAuth.h>
 #import <Foundation/Foundation.h>
+#import "FirebaseAuth/Sources/Public/FirebaseAuth/FIRAuth.h"
+#import "FirebaseCore/Sources/Private/FIRLogger.h"
 #import "Interop/Auth/Public/FIRAuthInterop.h"
 
 @class FIRAuthRequestConfiguration;
@@ -143,5 +144,9 @@ NS_ASSUME_NONNULL_BEGIN
     (nullable FIRAuthDataResultCallback)callback;
 
 @end
+
+/// Logger Service String
+
+extern FIRLoggerService kFIRLoggerAuth;
 
 NS_ASSUME_NONNULL_END
